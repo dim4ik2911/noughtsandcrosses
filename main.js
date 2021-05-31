@@ -35,3 +35,59 @@ const checkWinningCondition = (squares) => {
     return false;
   }
 };
+
+for (let index = 0; index < squares.length; index++) {
+  squares[index].addEventListener("click", () => {
+    if (squares[index].innerHTML !== "") {
+      return; //stops the function
+    }
+    if (isPlayerOneTurn) {
+      squares[index].innerHTML = "X";
+      squares[index].style.backgroundColor = "red";
+
+      isPlayerTwoTurn = true;
+      isPlayerOneTurn = false;
+    } else {
+      squares[index].innerHTML = "0";
+      squares[index].style.backgroundColor = "blue";
+
+      isPlayerOneTurn = true;
+      isPlayerTwoTurn = false;
+    }
+    const firstRowWin = checkWinningCondition(firstRow);
+    const secondRowWin = checkWinningCondition(secondRow);
+    const thirdRowWin = checkWinningCondition(thirdRow);
+    const fourthRowWin = checkWinningCondition(fourthRow);
+
+    const firstColumnWin = checkWinningCondition(firstColumn);
+    const secondColumnWin = checkWinningCondition(secondColumn);
+    const thirdColumnWin = checkWinningCondition(thirdColumn);
+    const fourthColumnWin = checkWinningCondition(fourthColumn);
+
+    const firstDiagonalWin = checkWinningCondition(firstDiagonal);
+    const secondDiagonalWin = checkWinningCondition(secondDiagonal);
+
+    if (
+      firstRowWin == true ||
+      secondRowWin == true ||
+      thirdRowWin == true ||
+      fourthRowWin == true ||
+      firstColumnWin == true ||
+      secondColumnWin == true ||
+      thirdColumnWin == true ||
+      fourthColumnWin == true ||
+      firstDiagonalWin == true ||
+      secondDiagonalWin == true
+    ) {
+      if (isPlayerTwoTurn) {
+        result.innerHTML = "PLAYER 1 IS A WINNER";
+        restart.innerHTML = "RESTART";
+        score1.innerHTML++;
+      } else {
+        result.innerHTML = "PLAYER 2 IS A WINNERk";
+        restart.innerHTML = "RESTART";
+        score2.innerHTML++;
+      }
+    }
+  });
+}
