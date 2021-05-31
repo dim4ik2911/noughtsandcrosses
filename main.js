@@ -20,3 +20,18 @@ const secondDiagonal = [squares[3], squares[6], squares[9], squares[12]];
 //control turns
 let isPlayerOneTurn = true;
 let isPlayerTwoTurn = false;
+
+//check winning condition
+const checkWinningCondition = (squares) => {
+  const innerHTMLArray = squares.map((square) => {
+    return square.innerHTML;
+  });
+  const toCheck = innerHTMLArray.join("");
+  // check IF toCheck equals "xxxx" or "0000"; => return true,  else return false
+
+  if (toCheck === "XXXX" || toCheck === "0000") {
+    return true;
+  } else {
+    return false;
+  }
+};
