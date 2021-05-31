@@ -27,7 +27,7 @@ main {
   width: 80%;
 }
 .main-part p {
-  font-size: 20rem;
+  font-size: 5rem;
 }
 
 .game {
@@ -42,7 +42,7 @@ main {
 }
 
 .square {
-  font-size: 5rem;
+  font-size: 3rem;
   background-color: white;
   display: flex;
   justify-content: center;

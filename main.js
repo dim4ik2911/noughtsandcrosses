@@ -1,7 +1,5 @@
 //declared variables
 const squares = document.querySelectorAll(".square");
-const score1 = document.getElementById("score1");
-const score2 = document.getElementById("score2");
 
 // winning combinations
 const firstRow = [squares[0], squares[1], squares[2], squares[3]];
@@ -84,10 +82,38 @@ for (let index = 0; index < squares.length; index++) {
         restart.innerHTML = "RESTART";
         score1.innerHTML++;
       } else {
-        result.innerHTML = "PLAYER 2 IS A WINNERk";
+        result.innerHTML = "PLAYER 2 IS A WINNER";
         restart.innerHTML = "RESTART";
         score2.innerHTML++;
       }
     }
+  });
+}
+
+//function that restarts the game
+const restart = document.getElementById("next-round");
+const result = document.getElementById("result");
+for (let index = 0; index < squares.length; index++) {
+  restart.addEventListener("click", () => {
+    // if (squares[index].innerHTML == "x" || squares[index].innerHTML == "0") {
+    return (squares[index].innerHTML = "");
+  });
+}
+for (let index = 0; index < squares.length; index++) {
+  restart.addEventListener("click", () => {
+    // if (squares[index].innerHTML == "x" || squares[index].innerHTML == "0") {
+    return (squares[index].style.backgroundColor = "#29bd00");
+  });
+}
+for (let index = 0; index < squares.length; index++) {
+  restart.addEventListener("click", () => {
+    // if (squares[index].innerHTML == "x" || squares[index].innerHTML == "0") {
+    return (result.innerHTML = `&nbsp;`);
+  });
+}
+for (let index = 0; index < squares.length; index++) {
+  restart.addEventListener("click", () => {
+    // if (squares[index].innerHTML == "x" || squares[index].innerHTML == "0") {
+    return (restart.innerHTML = `&nbsp;`);
   });
 }
