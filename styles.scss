@@ -26,6 +26,7 @@ main {
     font-size: 1.8rem;
     text-align: center;
     width: 100%;
+    padding: 2rem 0;
   }
 
   .main-part {
@@ -35,33 +36,38 @@ main {
     width: 100%;
 
     .score {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
 
-    .squares {
-      border: 0.5rem solid #fff;
-      height: 20rem;
-      width: 20rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-gap: 0.5rem;
-      background-color: #fff;
+    .middle-part {
+      padding: 2rem 0;
 
-      .square {
-        font-size: 2.5rem;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        background-color: #23bb49;
+      .squares {
+        border: 0.5rem solid #fff;
+        height: 20rem;
+        width: 20rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 0.5rem;
+        background-color: #fff;
+
+        .square {
+          font-size: 2.5rem;
+          background-color: rgb(255, 255, 255);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          background-color: #23bb49;
+        }
       }
     }
   }
 
   .footer-part {
+    padding: 2rem 0;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -88,21 +94,21 @@ main {
 }
 @media screen and (min-width: 799px) {
   html {
-    font-size: 125%;
+    font-size: 112.5%;
     font-family: "B612 Mono", monospace;
   }
 }
 @media screen and (min-width: 1280px) {
   html {
-    font-size: 150%;
+    font-size: 125%;
     font-family: "B612 Mono", monospace;
   }
 
-  main {
-    .main-part {
-      .score {
-        font-size: 3.2rem;
-      }
-    }
-  }
+  // main {
+  //   .main-part {
+  //     .score {
+  //       font-size: 3.2rem;
+  //     }
+  //   }
+  // }
 }

@@ -22,6 +22,7 @@ main .header-part {
   font-size: 1.8rem;
   text-align: center;
   width: 100%;
+  padding: 2rem 0;
 }
 main .main-part {
   display: flex;
@@ -30,9 +31,12 @@ main .main-part {
   width: 100%;
 }
 main .main-part .score {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
-main .main-part .squares {
+main .main-part .middle-part {
+  padding: 2rem 0;
+}
+main .main-part .middle-part .squares {
   border: 0.5rem solid #fff;
   height: 20rem;
   width: 20rem;
@@ -42,7 +46,7 @@ main .main-part .squares {
   grid-gap: 0.5rem;
   background-color: #fff;
 }
-main .main-part .squares .square {
+main .main-part .middle-part .squares .square {
   font-size: 2.5rem;
   background-color: white;
   display: flex;
@@ -53,6 +57,7 @@ main .main-part .squares .square {
   background-color: #23bb49;
 }
 main .footer-part {
+  padding: 2rem 0;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -77,17 +82,13 @@ main .footer-part #result {
 }
 @media screen and (min-width: 799px) {
   html {
-    font-size: 125%;
+    font-size: 112.5%;
     font-family: "B612 Mono", monospace;
   }
 }
 @media screen and (min-width: 1280px) {
   html {
-    font-size: 150%;
+    font-size: 125%;
     font-family: "B612 Mono", monospace;
-  }
-
-  main .main-part .score {
-    font-size: 3.2rem;
   }
 }
