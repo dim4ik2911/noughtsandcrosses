@@ -22,8 +22,6 @@ main {
     rgba(51, 58, 255, 1) 50%
   );
 
-  border: 0.5rem solid #fff;
-
   .header-part {
     font-size: 1.8rem;
     text-align: center;
@@ -42,8 +40,8 @@ main {
 
     .squares {
       border: 0.5rem solid #fff;
-      height: 18rem;
-      width: 18rem;
+      height: 20rem;
+      width: 20rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
@@ -71,7 +69,40 @@ main {
     align-items: center;
 
     #result {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 479px) {
+  html {
+    font-size: 81.25%;
+    font-family: "B612 Mono", monospace;
+  }
+}
+@media screen and (min-width: 599px) {
+  html {
+    font-size: 93.75%;
+    font-family: "B612 Mono", monospace;
+  }
+}
+@media screen and (min-width: 799px) {
+  html {
+    font-size: 125%;
+    font-family: "B612 Mono", monospace;
+  }
+}
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 150%;
+    font-family: "B612 Mono", monospace;
+  }
+
+  main {
+    .main-part {
+      .score {
+        font-size: 3.2rem;
+      }
     }
   }
 }
