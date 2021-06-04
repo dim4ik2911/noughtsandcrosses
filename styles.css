@@ -15,7 +15,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(90deg, #ff2424 50%, #333aff 50%);
 }
 main .header-part {
