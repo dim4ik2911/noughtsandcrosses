@@ -14,31 +14,32 @@
   </head>
   <body>
     <main>
-      <h1>NOUGHTS && CROSSES</h1>
-      <!-- <h1>Goal || Goal</h1> -->
-      <div class="main-part">
-        <section class="game">
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-          <p class="square"></p>
-        </section>
+      <div class="header-part">
+        <h1>NOUGHTS && CROSSES</h1>
       </div>
-      <h3 id="result">&nbsp;</h3>
-      <canvas id="my-canvas"></canvas>
-      <h6 id="next-round">&nbsp;</h6>
+      <div class="main-part">
+        <div class="score">
+          <h1>&nbsp;</h1>
+        </div>
+        <div class="squares">
+          <p class="square"></p>
+          <p class="square"></p>
+          <p class="square"></p>
+          <p class="square"></p>
+          <p class="square"></p>
+          <p class="square"></p>
+          <p class="square"></p>
+          <p class="square"></p>
+          <p class="square"></p>
+        </div>
+        <div class="score">
+          <h1>&nbsp;</h1>
+        </div>
+      </div>
+      <div class="footer-part">
+        <h1 id="result">CLICK ON SQUARE</h1>
+        <h1 id="next-round">TO START A GAME</h1>
+      </div>
     </main>
     <script src="node_modules/confetti-js/dist/index.min.js"></script>
     <script src="./main.js"></script>
