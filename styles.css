@@ -58,19 +58,16 @@ main .main-part .middle-part .squares .square {
 }
 main .footer-part {
   padding: 2rem 0;
-  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 main .footer-part #result {
-  font-size: 1.9rem;
   text-align: center;
 }
 main .restart-part {
   padding: 2rem 0;
-  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
