@@ -65,30 +65,42 @@ main .footer-part {
   align-items: center;
 }
 main .footer-part #result {
-  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  text-align: center;
+}
+main .restart-part {
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .restart-part button {
+  text-decoration: none;
+  border: none;
+  background-color: inherit;
+  color: #fff;
+  font-family: "B612 Mono", monospace;
 }
 
 @media screen and (min-width: 479px) {
   html {
     font-size: 81.25%;
-    font-family: "B612 Mono", monospace;
   }
 }
 @media screen and (min-width: 599px) {
   html {
     font-size: 93.75%;
-    font-family: "B612 Mono", monospace;
   }
 }
 @media screen and (min-width: 799px) {
   html {
     font-size: 112.5%;
-    font-family: "B612 Mono", monospace;
   }
 }
 @media screen and (min-width: 1280px) {
   html {
     font-size: 125%;
-    font-family: "B612 Mono", monospace;
   }
 }
