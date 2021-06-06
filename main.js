@@ -5,9 +5,7 @@ let crosses = document.getElementById("crosses");
 const result = document.getElementById("result");
 const restart = document.getElementById("next-round");
 
-//function to disable restart button
-//function for next round
-
+//restart click options
 restart.addEventListener("click", () => {
   const squaresArray = Array.from(squares);
   if (restart.innerHTML == "NEXT ROUND") {
@@ -60,7 +58,7 @@ const checkWinningCondition = (squares) => {
   }
 };
 
-//checking clicking
+//checking clicking on square
 for (let index = 0; index < squares.length; index++) {
   squares[index].addEventListener("click", () => {
     if (squares[index].innerHTML !== "") {
@@ -99,6 +97,7 @@ for (let index = 0; index < squares.length; index++) {
         isPlayerTwoTurn = false;
       }
     }
+    //winning combinations
     const firstRowWin = checkWinningCondition(firstRow);
     const secondRowWin = checkWinningCondition(secondRow);
     const thirdRowWin = checkWinningCondition(thirdRow);
@@ -109,7 +108,7 @@ for (let index = 0; index < squares.length; index++) {
 
     const firstDiagonalWin = checkWinningCondition(firstDiagonal);
     const secondDiagonalWin = checkWinningCondition(secondDiagonal);
-
+    //checking if winning combination made
     if (
       firstRowWin == true ||
       secondRowWin == true ||
@@ -160,29 +159,3 @@ for (let index = 0; index < squares.length; index++) {
     }
   });
 }
-
-//function that restarts the game
-// for (let index = 0; index < squares.length; index++) {
-//   restart.addEventListener("click", () => {
-//     // if (squares[index].innerHTML == "x" || squares[index].innerHTML == "0") {
-//     return (squares[index].innerHTML = "");
-//   });
-// }
-// for (let index = 0; index < squares.length; index++) {
-//   restart.addEventListener("click", () => {
-//     // if (squares[index].innerHTML == "x" || squares[index].innerHTML == "0") {
-//     return (squares[index].style.backgroundColor = "#29bd00");
-//   });
-// }
-// for (let index = 0; index < squares.length; index++) {
-//   restart.addEventListener("click", () => {
-//     // if (squares[index].innerHTML == "x" || squares[index].innerHTML == "0") {
-//     return (result.innerHTML = `&nbsp;`);
-//   });
-// }
-// for (let index = 0; index < squares.length; index++) {
-//   restart.addEventListener("click", () => {
-//     // if (squares[index].innerHTML == "x" || squares[index].innerHTML == "0") {
-//     return (restart.innerHTML = `&nbsp;`);
-//   });
-// }
