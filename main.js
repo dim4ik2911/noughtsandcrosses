@@ -133,8 +133,9 @@ for (let index = 0; index < squares.length; index++) {
           result.innerHTML = "CROSSES WON A ROUND";
           restart.innerHTML = "NEXT ROUND";
         }
-        if (crosses.innerHTML == 5) {
+        if (crosses.innerHTML >= 5) {
           result.innerHTML = "CROSSES WON A GAME";
+          crosses.innerHTML = 5;
           confetti({
             particleCount: 250,
             spread: 100,
@@ -157,8 +158,9 @@ for (let index = 0; index < squares.length; index++) {
           result.innerHTML = "NOUGHTS WON A ROUND";
           restart.innerHTML = "NEXT ROUND";
         }
-        if (noughts.innerHTML == 5) {
+        if (noughts.innerHTML >= 5) {
           result.innerHTML = "NOUGHTS WON A GAME";
+          noughts.innerHTML = 5;
           confetti({
             particleCount: 250,
             spread: 100,
