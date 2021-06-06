@@ -135,6 +135,12 @@ for (let index = 0; index < squares.length; index++) {
         }
         if (crosses.innerHTML == 5) {
           result.innerHTML = "CROSSES WON A GAME";
+          confetti({
+            particleCount: 250,
+            spread: 100,
+            origin: { y: 0.6 },
+          });
+          confetti();
           restart.innerHTML = "RESTART A GAME";
         }
       } else {
@@ -153,6 +159,12 @@ for (let index = 0; index < squares.length; index++) {
         }
         if (noughts.innerHTML == 5) {
           result.innerHTML = "NOUGHTS WON A GAME";
+          confetti({
+            particleCount: 250,
+            spread: 100,
+            origin: { y: 0.6 },
+          });
+          confetti();
           restart.innerHTML = "RESTART A GAME";
         }
       }
