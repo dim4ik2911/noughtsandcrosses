@@ -9,3 +9,7 @@
 <h4 align="center">just 1 emoji and after it just blocked to press on squares</h4>
 <h4 align="center">actuall button-icon for restart</h4>
 
+<div align="center">
+<img align="center" src="https://user-images.githubusercontent.com/75121895/123848656-dec32580-d90f-11eb-98f5-a36bcf1251c1.png" alt="noughts and crosses">
+</div>
+
